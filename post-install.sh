@@ -15,4 +15,4 @@ cd /home/$username/dotfiles
 # Cleanup
 cd /home/$username
 rm -rf debian-n3ph0s
-reboot
+sudo reboot
