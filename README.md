@@ -25,4 +25,4 @@ cd debian-n3ph0s/
 chmod +x post-install.sh
 ./post-install.sh
 ```
-*NOTE*: You will be prompted for the root password when installing the starship prompt
+**NOTE**: You will be prompted for the root password when installing the starship prompt
