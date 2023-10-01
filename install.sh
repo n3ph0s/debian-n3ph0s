@@ -28,8 +28,6 @@ git clone https://gitlab.com/dwt1/wallpapers.git /home/$username/wallpapers
 git clone https://github.com/n3ph0s/dotfiles.git /home/$username/dotfiles
 cd /home/$username
 chown -R $username:$username dotfiles/
-chmow +x /home/$username/dotfiles/install.sh
 
-# Cleanup 
-rm -rf /home/$username/debian-n3ph0s
+# Restart Computer 
 reboot
