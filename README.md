@@ -18,7 +18,7 @@ After the first login you will be presented with the option to create a default 
 
 ![Default i3wm key binding](img2.png)
 
-After you have selected this press Super+Return to launch a terminal thenexecute the following commands
+After you have selected this press Super+Return to launch a terminal then execute the following commands
 
 ```
 cd debian-n3ph0s/
