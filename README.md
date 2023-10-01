@@ -23,6 +23,6 @@ After you have selected this press Super+Return to launch a terminal then execut
 ```
 cd debian-n3ph0s/
 chmod +x post-install.sh
-sudo ./post-install.sh
+./post-install.sh
 ```
-
+*NOTE*: You will be prompted for the root password when installing the starship prompt

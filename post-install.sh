@@ -1,10 +1,5 @@
 #!/bin/bash
 
-if [[ $EUID -ne 0 ]]; then
-    echo "You must run the script with root privileges.  Run sudo ./post-install.sh" 2>&1
-    exit 1
-fi
-
 username=$(id -u -n 1000)
 
 # Set Shell to ZSH
