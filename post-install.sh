@@ -1,12 +1,17 @@
 #!/bin/bash
 
+if [[ $EUID -ne 0 ]]; then
+    echo "You must run the script with root privileges.  Run sudo ./post-install.sh" 2>&1
+    exit 1
+fi
+
 username=$(id -u -n 1000)
 
 # Install starship prompt
 curl -sS https://starship.rs/install.sh | sh
 
 # Set Shell to ZSH
-chsh -s /usr/bin/zsh
+chsh -s /usr/bin/zsh $username
 
 # Load the dotfiles
 cd /home/$username/dotfiles
