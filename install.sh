@@ -12,7 +12,10 @@ username=$(id -u -n 1000)
 apt update && apt upgrade -y
 
 # Install Core and Quality of Life Programs
-apt install feh kitty rofi picom thunar lxpolkit x11-xserver-utils unzip curl pulseaudio-utils pipewire pavucontrol build-essential libx11-dev libxinerama-dev apt-transport-https neofetch flameshot psmisc neovim lxappearance papirus-icon-theme fonts-noto-color-emoji polybar dunst conky zsh-syntax-highlighting ripgrep blueman bluez-tools bat exa tldr htop ranger zsh fzf scrot lightdm slick-greeter i3 -y
+apt install feh kitty rofi picom thunar lxpolkit x11-xserver-utils unzip curl pulseaudio-utils pipewire pavucontrol build-essential libx11-dev libxinerama-dev apt-transport-https neofetch flameshot psmisc neovim lxappearance papirus-icon-theme fonts-noto-color-emoji polybar dunst conky zsh-syntax-highlighting ripgrep blueman bluez-tools flatpak bat exa tldr htop ranger zsh fzf scrot lightdm slick-greeter i3 -y
+
+# Configure Flatpak
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
 # Install Brave Browser
 
