@@ -26,3 +26,7 @@ chmod +x post-install.sh
 ./post-install.sh
 ```
 **NOTE**: You will be prompted for the root password when installing the starship prompt
+
+Once the system reboots and you log back in you will have a fully functioning Windows Manager
+
+![Desktop with Terminal](desktop.png)
