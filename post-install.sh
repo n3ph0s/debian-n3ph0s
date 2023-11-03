@@ -21,6 +21,7 @@ cd /home/$username/dotfiles
 ./install.sh
 
 # Install and Configure NeoVim
+source /home/$username/.config/zsh/.zshrc
 mkdir /home/$username/appimage && cd /home/$username/appimage
 curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage 
 chmod u+x nvim.appimage
