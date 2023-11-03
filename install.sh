@@ -17,13 +17,6 @@ apt install feh kitty rofi picom thunar lxpolkit x11-xserver-utils unzip curl pu
 # Configure Flatpak
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
-# Create Directory and install Appimage
-mkdir /home/$username/appimage
-curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage --output /home/$username/appimage/nvim.appimage
-chown -R $username:$username /home/$username/appimage/
-chmod +x /home/$username/appimage/nvim.appimage
-ln -s /home/$username/appimage/nvim.appimage /usr/local/bin/nvim.appimage
-
 # Install Brave Browser
 
 curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg

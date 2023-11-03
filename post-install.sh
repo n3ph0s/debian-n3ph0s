@@ -20,7 +20,11 @@ flatpak install --noninteractive --assumeyes com.discordapp.Discord
 cd /home/$username/dotfiles
 ./install.sh
 
-# Set NeoVim variables
+# Install and Configure NeoVim
+mkdir /home/$username/appimage && cd /home/$username/appimage
+curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage 
+chmod u+x nvim.appimage
+sudo ln -s /home/$username/appimage/nvim.appimage /usr/local/bin/nvim.appimage
 set -u
 sudo update-alternatives --install /usr/bin/ex ex "${CUSTOM_NVIM_PATH}" 110
 sudo update-alternatives --install /usr/bin/vi vi "${CUSTOM_NVIM_PATH}" 110
