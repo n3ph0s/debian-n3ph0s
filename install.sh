@@ -19,7 +19,8 @@ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flat
 
 # Create Directory and install Appimage
 mkdir /home/$username/appimage
-curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage --output /home/$username/appimage
+curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage --output /home/$username/appimage/nvim.appimage
+chown -R $username:$username /home/$username/appimage/
 chmod +x /home/$username/appimage/nvim.appimage
 ln -s /home/$username/appimage/nvim.appimage /usr/local/bin/nvim.appimage
 
