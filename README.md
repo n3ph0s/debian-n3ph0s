@@ -7,7 +7,6 @@ Debian 12 Installation
 sudo apt install git -y
 git clone https://github.com/n3ph0s/debian-n3ph0s.git
 cd debian-n3ph0s
-chmod +x install.sh
 sudo ./install.sh
 ```
 ## Post Install
@@ -22,7 +21,6 @@ After you have selected this press Super+Return to launch a terminal then execut
 
 ```
 cd debian-n3ph0s/
-chmod +x post-install.sh
 ./post-install.sh
 ```
 **NOTE**: You will be prompted for the root password when installing the starship prompt
