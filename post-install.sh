@@ -16,6 +16,9 @@ flatpak install --noninteractive --assumeyes org.libreoffice.LibreOffice
 flatpak install --noninteractive --assumeyes md.obsidian.Obsidian
 flatpak install --noninteractive --assumeyes com.discordapp.Discord
 
+# Update the TlDR repo
+tldr --update
+
 # Load the dotfiles
 cd /home/$username/dotfiles
 ./install.sh
