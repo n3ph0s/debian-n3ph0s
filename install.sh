@@ -12,10 +12,16 @@ username=$(id -u -n 1000)
 apt update && apt upgrade -y
 
 # Install Core and Quality of Life Programs
-apt install feh kitty rofi picom thunar lxpolkit x11-xserver-utils unzip curl pulseaudio-utils pipewire pavucontrol build-essential libx11-dev libxinerama-dev apt-transport-https neovim neofetch flameshot psmisc lxappearance papirus-icon-theme fonts-noto-color-emoji polybar dunst conky zsh-syntax-highlighting ripgrep blueman bluez-tools flatpak bat exa tealdeer htop ranger zsh fzf scrot lightdm slick-greeter i3 -y
+apt install feh kitty rofi picom thunar lxpolkit x11-xserver-utils unzip curl pulseaudio-utils pipewire pavucontrol build-essential libx11-dev libxinerama-dev apt-transport-https neofetch flameshot psmisc lxappearance papirus-icon-theme fonts-noto-color-emoji polybar dunst conky zsh-syntax-highlighting ripgrep blueman bluez-tools flatpak bat tealdeer htop ranger zsh fzf fd-find tmux gpg ninja-build gettext cmake unzip curl scrot lightdm slick-greeter i3 -y
 
 # Configure Flatpak
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+
+# Install eza 
+mkdir -p /etc/apt/keyrings
+wget -qO- https://raw.githubusercontent.com/eza-community/eza/main/deb.asc | gpg --dearmor -o /etc/apt/keyrings/gierens.gpg
+echo "deb [signed-by=/etc/apt/keyrings/gierens.gpg] http://deb.gierens.de stable main" | tee /etc/apt/sources.list.d/gierens.list
+chmod 644 /etc/apt/keyrings/gierens.gpg /etc/apt/sources.list.d/gierens.list
 
 # Install Brave Browser
 
